@@ -34,13 +34,15 @@
     "test": "grunt"
   },
   "bin": {
-    "list-all-machines": "cli.js"
+    "list-all-machines": "./bin/cli.js"
   },
   "preferGlobal": "true",
   "dependencies": {
     "lodash": "~2.4.1",
     "loggerjs": "~0.1.0",
     "aws-sdk": "~2.0.19",
-    "async": "~0.9.0"
+    "async": "~0.9.0",
+    "pkgcloud": "~0.9.6",
+    "commander": "~2.3.0"
   }
 }
