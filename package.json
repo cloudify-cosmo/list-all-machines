@@ -35,7 +35,7 @@
     "test": "grunt"
   },
   "bin": {
-    "list-all-machines": "./bin/cli.js"
+    "list-all-machines": "cli.js"
   },
   "preferGlobal": "true",
   "dependencies": {
