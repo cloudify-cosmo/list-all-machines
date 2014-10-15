@@ -4,7 +4,7 @@
 var program = require('commander');
 var logger = require('log4js').getLogger('cli');
 
-var listAllMachines = require('./../lib/list-all-machines');
+var listAllMachines = require('./lib/list-all-machines');
 
 
 var command = process.argv[process.argv.length-1];
@@ -14,7 +14,7 @@ var command = process.argv[process.argv.length-1];
 switch( command ){
     case 'list' : {
         program
-            .version(require('./../package').version)
+            .version(require('./package').version)
             .option('-f, --file [file]', 'The configuration file', 'conf/dev/me.json')
             .parse(process.argv);
 

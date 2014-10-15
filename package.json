@@ -15,7 +15,8 @@
   },
   "license": "MIT",
   "files": [
-    "lib"
+    "lib",
+    "cli.js"
   ],
   "keywords": [
     "list-all-machines",
@@ -32,6 +33,9 @@
   },
   "scripts": {
     "test": "grunt"
+  },
+  "bin": {
+    "list-all-machines": "./bin/cli.js"
   },
   "preferGlobal": "true",
   "dependencies": {
