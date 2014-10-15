@@ -1,4 +1,4 @@
-#  [![Build Status](https://secure.travis-ci.org//list-all-machines.png?branch=master)](http://travis-ci.org//list-all-machines)
+#  [![Build Status](https://travis-ci.org/guy-mograbi-at-gigaspaces/list-all-machines.svg?branch=master)](http://travis-ci.org/guy-mograbi-at-gigaspaces/list-all-machines)
 
 > Lists machines on the cloud
 
