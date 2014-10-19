@@ -16,6 +16,7 @@ switch( command ){
         program
             .version(require('./package').version)
             .option('-f, --file [file]', 'The configuration file', 'conf/dev/me.json')
+            .option('-o, --output [output]', 'The output file', 'list-all-machines.output')
             .parse(process.argv);
 
         var configFile =  program.file || process.env.CONFIG_FILE ;
@@ -25,7 +26,9 @@ switch( command ){
                 process.exit(1);
 
             }
-            logger.info( JSON.stringify(report, {},4 ) );
+            var output = require('path').resolve(program.output);
+            logger.info('writing output to [', output ,']');
+            require('fs').writeFile(output, JSON.stringify(report, {},4 ) );
         });
         break;
     }
