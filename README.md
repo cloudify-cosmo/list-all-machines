@@ -16,7 +16,7 @@ list-all-machines.list(config, function callback(err, result) { ... } );
 Install with cli command
 
 ```sh
-$ npm install -g "https://github.com/guy-mograbi-at-gigaspaces/list-all-machines.git"
+$ npm install -g "guy-mograbi-at-gigaspaces/list-all-machines"
 $ list-all-machines --help list
 $ list-all-machines --version list
 $ list-all-machines --file /path/to/configuration/file.json list
