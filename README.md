@@ -70,8 +70,8 @@ Here is a small documentation to how this configuration file should look like.
             "type" : "azure",
             "description" : "my azure account",
             "subscriptionId" : "the subscription ID",
-            "key" : "the .key file. to create new one see : https://github.com/pkgcloud/pkgcloud/blob/master/docs/providers/azure.md#azure-manage-cert ",
-            "cert" : "the .pem file. to create new one see : https://github.com/pkgcloud/pkgcloud/blob/master/docs/providers/azure.md#azure-manage-cert"
+            "key" : "content or path of the .key file. to create new one see : https://github.com/pkgcloud/pkgcloud/blob/master/docs/providers/azure.md#azure-manage-cert ",
+            "cert" : "content or path of the .pem file. to create new one see : https://github.com/pkgcloud/pkgcloud/blob/master/docs/providers/azure.md#azure-manage-cert"
 
         }
     ]
