@@ -70,9 +70,10 @@ Here is a small documentation to how this configuration file should look like.
             "type" : "azure",
             "description" : "my azure account",
             "subscriptionId" : "the subscription ID",
-            "key" : "the .key file. to create new one see : https://github.com/pkgcloud/pkgcloud/blob/master/docs/providers/azure.md#azure-manage-cert ",
-            "cert" : "the .pem file. to create new one see : https://github.com/pkgcloud/pkgcloud/blob/master/docs/providers/azure.md#azure-manage-cert"
-
+            "key" : "content or path of the .key file. to create new one see : https://github.com/pkgcloud/pkgcloud/blob/master/docs/providers/azure.md#azure-manage-cert ",
+            "cert" : "content or path of the .pem file. to create new one see : https://github.com/pkgcloud/pkgcloud/blob/master/docs/providers/azure.md#azure-manage-cert"
+    
+               ** IMPORTANT ** if you give the content of a file, make sure to remove newlines and replace them with the \n character. you can use "http://stackoverflow.com/questions/26451551/how-to-convert-multiline-file-into-a-string-in-bash-with-newline-character" to automate this.. 
         }
     ]
 }
