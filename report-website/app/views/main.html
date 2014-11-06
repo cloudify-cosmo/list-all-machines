@@ -1,36 +1,37 @@
-<div class="header">
-  <ul class="nav nav-pills pull-right">
-    <li class="active"><a ng-href="#">Home</a></li>
-    <li><a ng-href="#">About</a></li>
-    <li><a ng-href="#">Contact</a></li>
-  </ul>
-  <h3 class="text-muted">list all machines</h3>
-</div>
+<div>
+    <h1> GigaSpaces Cloud Usage Report </h1>
+    <h2>Generate at {{raw.timestamp | date:'short'}}</h2>
 
-<div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!</a></p>
-</div>
+    <table  class="tabular-view overview">
+        <tr>
+            <td ng-repeat="summaryItem in data.summaryItems">
+                {{summaryItem.title}}<br/>
+                {{summaryItem.total}}
+            </td>
+        </tr>
+    </table>
+    <table  class="tabular-view breakdown">
+        <tr ng-repeat="summaryItem in data.summaryItems" >
+            <td>
+                {{summaryItem.title}}<br/>
+                {{summaryItem.total}}
+            </td>
+            <td>
+                <table >
+                    <tr ng-repeat="subItem in summaryItem.subItems"> <td>{{subItem.title}}<br/>{{subItem.total}}</td> <td><button ng-click="showDetails(subItem)">inspect</button></td></tr>
+                </table>
+            </td>
+        </tr>
+    </table>
 
-<div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
 
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
+    <div id="details" ng-show="details" class="details" >
+        <h1>Details for {{details.account}} - {{details.total}}</h1>
+        <table class="tabular-view details">
+            <tr ng-repeat="d in details.details"><td>{{d.id}}</td><td>{{d.description}}</td></tr>
+        </table>
+    </div>
 
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
-</div>
 
-<div class="footer">
-  <p>♥ from the Yeoman team</p>
+
 </div>

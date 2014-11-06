@@ -11,11 +11,15 @@
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
+      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
         <!-- build:css({.tmp,app}) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
+
         <!-- endbuild -->
 </head>
   <body ng-app="listAllMachinesApp">
+  <div class="body">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -47,11 +51,83 @@
         <script src="bower_components/angular-cookies/angular-cookies.js"></script>
         <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
         <script src="bower_components/angular-route/angular-route.js"></script>
+        <script src="bower_components/lodash/dist/lodash.min.js"></script>
         <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/services/ReportService.js"></script>
         <!-- endbuild -->
+    </div>
+  <div id="footer-logo">
+      <img src="http://www.gigaspaces.com/sites/all/themes/gigaspaces/images/logo-w-bg.png"/>
+  </div>
+    <div id="footer">
+
+        <div class="footer-content">
+        <div class="footer-item">
+            <div class="title">about</div>
+            <ul>
+                <li>Our mission</li>
+                <li>You can learn Anything</li>
+                <li>Our Team</li>
+                <li>Our Interns</li>
+                <li>Our Content Specialists</li>
+                <li>Health Content Competition Winners</li>
+            </ul>
+        </div>
+        <div class="footer-item">
+            <div class="title">support</div>
+            <ul>
+                <li>help center</li>
+            </ul>
+            <div class="title">contact us</div>
+            <ul>
+                <li>contact</li>
+                <li>press</li>
+            </ul>
+        </div>
+        <div class="footer-item">
+            <div class="title">coaching</div>
+            <ul>
+                <li>coach reports</li>
+                <li>coach resources</li>
+                <li>case studies</li>
+                <li>case studies</li>
+                <li>common core</li>
+            </ul>
+        </div>
+        <div class="footer-item">
+            <div class="title">careers</div>
+            <ul>
+                <li>full time</li>
+                <li>internship</li>
+            </ul>
+            <div class="title">contribute</div>
+            <ul>
+                <li>donate</li>
+                <li>volunteer</li>
+                <li>our supporters</li>
+                <li>shop ka</li>
+            </ul>
+        </div>
+        <div class="footer-item">
+            <div class="title">international<i class="fa fa-globe"></i></div>
+            <ul>
+                <li><select><option value="English">English</option></select></li>
+                <li>translate our content</li>
+            </ul>
+            <div class="title">social</div>
+            <ul>
+                <li>facebook</li>
+                <li>twitter</li>
+                <li>blog</li>
+                <li>life at ka</li>
+            </ul>
+        </div>
+        </div>
+
+    </div>
 </body>
 </html>
