@@ -9,5 +9,4 @@ var conf = require( path.join(__dirname, '..', 'conf', 'dev', 'test.json') );
 
 openstack.list(conf.openstack, function( err, data ){
     logger.info(arguments);
-    logger.info();
 });
