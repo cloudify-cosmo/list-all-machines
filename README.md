@@ -94,7 +94,7 @@ For every account you define you can add the following configuration to get an a
             "type" : ...
             ...
             "alert" : {
-                "flowdockStreamId" : "the stream id. I got mine from running GET on https://MY_TOKEN@api.flowdock.com/v1/flows",
+                "streamApiKey" : "the stream api key. get yours from : https://www.flowdock.com/account/tokens",
                 "expected" : 4 // any number of expected machines. if actual is higher, we send alert. otherwise we don't
             }
         }
