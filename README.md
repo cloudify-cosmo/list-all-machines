@@ -100,7 +100,7 @@ For every account you define you can add the following configuration to get an a
 ```
 
 The message looks like...
-
+![Alert example](/docs/alert-example.png)
 
 
 ## Examples
