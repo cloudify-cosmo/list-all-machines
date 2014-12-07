@@ -19,8 +19,7 @@ switch( command ){
             .option('-o, --output [output]', 'The output file', 'list-all-machines.output')
             .parse(process.argv);
 
-        var configFile =  program.file || process.env.CONFIG_FILE ;
-        listAllMachines.list(require(configFile), function(err, report){
+        listAllMachines.list(require(program.file || process.env.CONFIG_FILE), function(err, report){
             if ( !!err ){
                 logger.error(err);
                 process.exit(1);

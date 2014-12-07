@@ -1,50 +1,52 @@
 {
-  "name": "list-all-machines",
-  "version": "0.0.0",
-  "main": "lib/list-all-machines.js",
-  "description": "Lists machines on the cloud",
-  "homepage": "user/repo",
-  "bugs": "user/repo/issues",
-  "author": {
-    "name": "",
-    "email": ""
-  },
-  "repository": {
-    "type": "git",
-    "url": "user/repo"
-  },
-  "license": "MIT",
-  "files": [
-    "lib",
-    "cli.js"
-  ],
-  "keywords": [
-    "list-all-machines",
-    ""
-  ],
-  "devDependencies": {
-    "grunt-contrib-jshint": "^0.10.0",
-    "grunt-contrib-nodeunit": "^0.3.3",
-    "grunt-contrib-watch": "^0.6.1",
-    "load-grunt-tasks": "^0.4.0",
-    "time-grunt": "^0.3.1",
-    "grunt-mocha-cli": "^1.9.0",
-    "jshint-stylish": "^0.2.0"
-  },
-  "scripts": {
-    "test": "grunt"
-  },
-  "bin": {
-    "list-all-machines": "cli.js"
-  },
-  "preferGlobal": "true",
-  "dependencies": {
-    "lodash": "~2.4.1",
-    "loggerjs": "~0.1.0",
-    "aws-sdk": "~2.0.19",
-    "async": "~0.9.0",
-    "pkgcloud": "~1.0.2",
-    "commander": "~2.3.0",
-    "log4js": "~0.6.21"
-  }
+    "name": "list-all-machines",
+    "version": "0.0.0",
+    "main": "lib/list-all-machines.js",
+    "description": "Lists machines on the cloud",
+    "homepage": "user/repo",
+    "bugs": "user/repo/issues",
+    "author": {
+        "name": "",
+        "email": ""
+    },
+    "repository": {
+        "type": "git",
+        "url": "user/repo"
+    },
+    "license": "MIT",
+    "files": [
+        "lib",
+        "cli.js"
+    ],
+    "keywords": [
+        "list-all-machines",
+        ""
+    ],
+    "devDependencies": {
+        "grunt-contrib-jshint": "^0.10.0",
+        "grunt-contrib-nodeunit": "^0.3.3",
+        "grunt-contrib-watch": "^0.6.1",
+        "load-grunt-tasks": "^0.4.0",
+        "time-grunt": "^0.3.1",
+        "grunt-mocha-cli": "^1.9.0",
+        "jshint-stylish": "^0.2.0"
+
+    },
+    "scripts": {
+        "test": "grunt"
+    },
+    "bin": {
+        "list-all-machines": "cli.js"
+    },
+    "preferGlobal": "true",
+    "dependencies": {
+        "lodash": "~2.4.1",
+        "loggerjs": "~0.1.0",
+        "aws-sdk": "~2.0.19",
+        "async": "~0.9.0",
+        "pkgcloud": "~1.0.2",
+        "commander": "~2.3.0",
+        "log4js": "~0.6.21",
+        "node-rest-client": "~1.4.1"
+    }
 }

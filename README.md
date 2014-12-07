@@ -80,6 +80,29 @@ Here is a small documentation to how this configuration file should look like.
 ```
 
 
+## Configure Alert With Flowdock
+
+For every account you define you can add the following configuration to get an alert
+
+```json
+{
+    "accounts" : [
+        {
+            "type" : ...
+            ...
+            "alert" : {
+                "streamApiKey" : "the stream api key. get yours from : https://www.flowdock.com/account/tokens",
+                "expected" : 4 // any number of expected machines. if actual is higher, we send alert. otherwise we don't
+            }
+        }
+    ]
+}
+```
+
+The message looks like...
+![Alert example](/docs/alert-example.png)
+
+
 ## Examples
 
 The output example looks like so
