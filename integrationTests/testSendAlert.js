@@ -10,7 +10,7 @@ conf.initialize(require('../conf/dev/me.json'));
 
 describe('sendAlert.', function() {
     it('sshould send notification', function( done ) {
-        https://github.com/flowdock/node-flowdock#sending-messages
+//        https://github.com/flowdock/node-flowdock#sending-messages
         sendAlert.send('@guy how are you?', function(err, message, result){
             logger.info('send successfully', err, message, result);
             logger.info(arguments);
