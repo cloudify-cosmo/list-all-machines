@@ -86,9 +86,6 @@ For every account you define you can add the following configuration to get an a
 
 ```json
 {
-    "flowdock" : {
-        "apiToken" : "the api token we will use to send the messages"
-    }
     "accounts" : [
         {
             "type" : ...
@@ -103,6 +100,8 @@ For every account you define you can add the following configuration to get an a
 ```
 
 The message looks like...
+
+
 
 ## Examples
 
