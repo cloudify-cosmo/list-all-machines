@@ -32,10 +32,9 @@ angular.module('listAllMachinesApp')
             var summaryItems = this.digest(rawReport).summaryItems;
             var total = 0;
 
-            for (var i = 0; i < summaryItems.length; i++) {
-                var item = summaryItems[i];
-                total += item.total;
-            }
+            _.forEach(summaryItems, function(value){
+                total += value.total;
+            });
 
             return total;
         }
