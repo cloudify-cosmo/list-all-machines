@@ -19,6 +19,7 @@ angular.module('listAllMachinesApp')
 
                 summaryAgg[item.type].total += item.total;
                 summaryAgg[item.type].subItems.push({ 'title': item.account, 'total': item.total });
+
             });
 
             result.summaryItems = _.map(summaryAgg, function (item) {
@@ -26,6 +27,19 @@ angular.module('listAllMachinesApp')
             });
             return result;
         };
+
+        this.getTotal = function(rawReport){
+            var summaryItems = this.digest(rawReport).summaryItems;
+            var total = 0;
+
+            for (var i = 0; i < summaryItems.length; i++) {
+                var item = summaryItems[i];
+                total += item.total;
+            }
+
+            return total;
+        }
+
     });
 
 
