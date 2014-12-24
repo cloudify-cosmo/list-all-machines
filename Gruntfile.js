@@ -26,6 +26,14 @@ module.exports = function(grunt) {
         src: ['test/**/*.js']
       }
     },
+      jsdoc : {
+          dist : {
+              src: ['src/*.js', 'test/*.js', 'lib/**/*.js'],
+              options: {
+                  destination: 'doc'
+              }
+          }
+      },
     mochacli: {
       options: {
         reporter: 'nyan',
