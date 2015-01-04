@@ -2,8 +2,8 @@
  * Created by liron on 1/4/15.
  */
 'use strict';
-var assert = require('assert'),
-    listAllMachines = require('../lib/list-all-machines.js');
+//var assert = require('assert'),
+    //listAllMachines = require('../lib/list-all-machines.js');
 var HistoryManager = require('../lib/historyManager');
 
 /*var elasticsearch = require('elasticsearch');
@@ -21,15 +21,15 @@ var historyMgmt = new HistoryManager();
 }*/
 //historyMgmt.saveHistory(arg);
 
-var result = "11"
+var result = "11";
 
 var account = {
     "type" : "openstack",
     "description" : "my openstack account"
-}
+};
 var wrappedResult = { 'total' : result.length, 'type' : account.type, 'account' : account.description, 'details' : result };
 
-//historyMgmt.saveHistory(wrappedResult);
+historyMgmt.saveHistory(wrappedResult);
 
 historyMgmt.search('openstack');
 
