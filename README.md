@@ -1,3 +1,5 @@
+* Master [![Circle CI](https://circleci.com/gh/cloudify-cosmo/list-all-machines/tree/master.svg?style=shield)](https://circleci.com/gh/cloudify-cosmo/list-all-machines/tree/master)
+
 #  [![Build Status](https://travis-ci.org/guy-mograbi-at-gigaspaces/list-all-machines.svg?branch=master)](http://travis-ci.org/guy-mograbi-at-gigaspaces/list-all-machines)
 
 > Lists machines on the cloud
